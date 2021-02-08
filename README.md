@@ -12,7 +12,7 @@ Los votos usados en la página se conservan gracias a [MockAPI](https://mockapi.
 
 ## Reactividad de los votos
 
-Se hizo uso de los métodos PUT y GET de [MockAPI] para enviar y recibir la cantidad de votos positivos y negativos y así calcular los porcentajes respectivos, se decidió dejar el valor de los porcentajes de los votos en enteros, por razones estéticas
+Se hizo uso de los métodos PUT y GET de [MockAPI](https://mockapi.io) para enviar y recibir la cantidad de votos positivos y negativos y así calcular los porcentajes respectivos, se decidió dejar el valor de los porcentajes de los votos en enteros, por razones estéticas
 
 ## Responsive
 
