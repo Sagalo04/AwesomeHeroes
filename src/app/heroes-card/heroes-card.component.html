@@ -1,0 +1,35 @@
+<div
+  class="card o-heroes-card"
+  style="background-image: url('../../assets/img/{{ src }}');"
+>
+  <div class="o-card-content">
+    <div class="o-card-title-zone">
+      <div class="o-card-like" *ngIf="Vote == 0">
+        <img src="../../assets/svg/like.svg" width="20px" alt="" />
+      </div>
+      <div class="o-card-dislike" *ngIf="Vote == 1"></div>
+      <p class="h1 o-card-title">{{ name }}</p>
+    </div>
+    <p class="o-text-card">
+      Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu
+      velit libero.
+    </p>
+    <div class="o-card-detail">
+      <button class="o-button">Ver detalle</button>
+      <p>
+        1 mes atrás <br />
+        en lorem dolor
+      </p>
+    </div>
+  </div>
+  <div class="o-perc">
+    <div class="o-perc-like">
+      <img src="../../assets/svg/like.svg" width="28px" alt="" />
+      <p>50%</p>
+    </div>
+    <div class="o-perc-dislike">
+      <p>50%</p>
+      <img src="../../assets/svg/dislike.svg" width="28px" alt="" />
+    </div>
+  </div>
+</div>

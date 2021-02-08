@@ -1,0 +1,76 @@
+<div class="o-banner">
+  <app-heroes-nav></app-heroes-nav>
+
+  <div class="card o-banner-card" *ngIf="option == 'init'">
+    <div class="card-body o-card-content">
+      <h6 class="card-subtitle o-card-subtitle">Dinos tu opinón sobre</h6>
+      <h5 class="card-title display-4 o-banner-card-tittle">Ironman?</h5>
+      <p class="card-text o-card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+        fringilla nisi. Suspendisse vel nullla non ipsum volutpat fermentum et a
+        velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div class="o-banner-info">
+        <img src="../../assets/svg/wordpress.svg" width="12px" alt="" />
+        <a href="#" class="o-info">Más Información</a>
+      </div>
+      <p class="h5 o-vote">¿Cuál es tu voto?</p>
+    </div>
+    <div class="o-banner-vote">
+      <button class="o-banner-like" (click)="onClick(1)">
+        <img src="../../assets/svg/like.svg" alt="" />
+      </button>
+      <button class="o-banner-dislike" (click)="onClick(2)">
+        <img src="../../assets/svg/dislike.svg" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <div
+    class="card o-banner-card"
+    *ngIf="option == 'like' || option == 'dislike'"
+  >
+    <div class="card-body o-card-content">
+      <div class="o-title-select">
+        <h5 class="card-title h2 o-banner-card-tittle">Marvel</h5>
+        <h5 class="card-title h2 o-banner-card-tittle">- Ironman</h5>
+      </div>
+      <div class="o-banner-select">
+        <div class="o-banner-state-l" *ngIf="option == 'like'">
+          <img src="../../assets/svg/like.svg" width="50rem" alt="" />
+        </div>
+        <div class="o-banner-state-d" *ngIf="option == 'dislike'">
+          <img src="../../assets/svg/dislike.svg" width="50rem" alt="" />
+        </div>
+        <p class="h3">
+          Tu voto <br />
+          ha sido registrado!
+        </p>
+      </div>
+      <p class="card-text o-card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit et conubia
+        dictumst, varius aenean suscipit cubilia purus facilisi nisl dapibus
+        fames
+      </p>
+      <button class="o-button o-banner-button" (click)="onClick(3)">
+        << Volver a votar
+      </button>
+    </div>
+  </div>
+
+  <div class="o-reactive-vote">
+    <div class="o-vote-like" style="width: {{ likes }}%">
+      <img class="o-likeImg" src="../../assets/svg/like.svg" alt="" />
+      <p>{{ intlikes }}%</p>
+    </div>
+    <div class="o-vote-dislike" style="width: {{ dislikes }}%">
+      <p>{{ intdislikes }}%</p>
+      <img
+        class="o-dislikeImg"
+        src="../../assets/svg/dislike.svg"
+        alt=""
+        width="40px"
+      />
+    </div>
+  </div>
+</div>

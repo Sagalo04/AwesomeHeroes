@@ -1,0 +1,114 @@
+$textcolor: #fff;
+
+.o-heroes-card {
+
+  // background-image: url('../../assets/img/super.jpg');
+  background-size: cover;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  color: $textcolor;
+  border: 0;
+  border-radius: 0;
+  width: 32rem;
+  height: 35rem;
+  margin-top: 2.5rem;
+  margin-right: 2.5rem
+}
+
+.o-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0rem 1rem 0rem 2.5rem;
+  background: rgba(255, 255, 255, 0);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(109, 109, 109, 0) 43%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.7) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(43%, rgba(109, 109, 109, 0)), color-stop(75%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(109, 109, 109, 0) 43%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.7) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(109, 109, 109, 0) 43%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.7) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(109, 109, 109, 0) 43%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(109, 109, 109, 0) 43%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
+
+
+}
+
+.o-card-title-zone {
+  display: flex;
+
+  .o-card-like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: -2.5rem;
+    background-color: #00ADA4;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .o-card-dislike {
+    margin-top: 1rem;
+    margin-left: -2.5rem;
+    background-color: #FFA101;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .o-card-title {
+    margin-left: 0.5rem;
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+}
+
+
+.o-text-card {
+  font-size: 1rem;
+  font-weight: 200;
+  width: 25rem;
+  color: #EDEEEF;
+}
+
+.o-card-detail {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  font-size: 0.7rem;
+}
+
+.o-perc {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.o-perc-like {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 1rem;
+  width: 50%;
+  background-color: rgba(0, 173, 163, 0.8);
+
+  p {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0rem 1rem;
+  }
+}
+
+.o-perc-dislike {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0rem 1rem;
+  width: 50%;
+  background-color: rgba(255, 161, 1, 0.8);
+
+  p {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0rem 1rem;
+  }
+}
