@@ -1,27 +1,19 @@
 # AwesomeHeroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 10.0.4.
 
-## Development server
+## Servidor de desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Correr el comando `ng serve` para el dev server. Navegar a `http://localhost:4200/`.
 
-## Code scaffolding
+## Conservar Votos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Los votos usados en la página se conservan gracias a [MockAPI](https://mockapi.io) donde se generó un recurso JSON sencillo y de prueba para el uso de este proyecto, visible en (https://5fc6641b4931580016e3cf35.mockapi.io/Votes).
 
-## Build
+## Reactividad de los votos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Se hizo uso de los métodos PUT y GET de [MockAPI] para enviar y recibir la cantidad de votos positivos y negativos y así calcular los porcentajes respectivos, se decidió dejar el valor de los porcentajes de los votos en enteros, por razones estéticas
 
-## Running unit tests
+## Responsive
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+El proyecto llevado a cabo solo es responsive en computadores, sin embargo, por cuestiones de tiempo no se hizo Responsive a móvil.
